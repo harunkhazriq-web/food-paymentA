@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Order Payment</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+        }
+
+        .payment-container {
+            width: 100%;
+            max-width: 690px;
+
+            background-color: white;
+
+            border-radius: 24px;
+
+            padding: 65px 45px 35px;
+
+            text-align: center;
+
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* TAJUK */
+        h1 {
+            margin: 5px 0 32px;
+
+            font-size: 42px;
+            font-weight: bold;
+
+            color: black;
+        }
+
+        /* BAYAR DI SINI */
+        .payment-title {
+            margin-bottom: 25px;
+
+            font-size: 26px;
+            font-weight: bold;
+
+            color: black;
+        }
+
+        /* ARAHAN */
+        .instruction {
+            margin: 0 0 40px;
+
+            font-size: 21px;
+            line-height: 1.5;
+
+            color: black;
+        }
+
+        /* QR */
+        .qr-container {
+            width: 335px;
+            max-width: 100%;
+
+            margin: 0 auto 50px;
+
+            padding: 13px;
+
+            background-color: #e82d69;
+
+            border-radius: 13px;
+        }
+
+        .qr-container img {
+            display: block;
+
+            width: 100%;
+
+            aspect-ratio: 1 / 1;
+
+            object-fit: contain;
+
+            background-color: white;
+
+            border: 12px solid white;
+
+            border-radius: 13px;
+        }
+
+        /* LABEL BAWAH QR */
+        .qr-label {
+            padding-top: 17px;
+            padding-bottom: 3px;
+
+            color: white;
+
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        /* ARAHAN SELEPAS BAYAR */
+        .after-payment {
+            margin: 0 0 30px;
+
+            font-size: 19px;
+            line-height: 1.5;
+
+            color: black;
+        }
+
+        /* BUTTON */
+        .back-button {
+            display: block;
+
+            width: 100%;
+
+            padding: 22px 10px;
+
+            border: none;
+
+            border-radius: 15px;
+
+            background-color: green;
+
+            color: white;
+
+            font-size: 21px;
+
+            text-decoration: none;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: #006400;
+        }
+
+        /* PHONE */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .payment-container {
+                padding: 40px 20px 25px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .payment-title {
+                font-size: 22px;
+            }
+
+            .instruction {
+                font-size: 17px;
+            }
+
+            .after-payment {
+                font-size: 16px;
+            }
+
+            .back-button {
+                padding: 18px 10px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="payment-container">
+
+        <!-- TAJUK -->
+        <h1>Food Order Payment</h1>
+
+        <!-- BAYAR -->
+        <div class="payment-title">
+            Bayar di sini
+        </div>
+
+        <!-- ARAHAN -->
+        <p class="instruction">
+            Scan QR di bawah untuk membuat pembayaran.
+        </p>
+
+        <!-- QR CODE -->
+        <div class="qr-container">
+
+            <img
+                src="QRA.jpeg"
+                alt="QR Code Pembayaran"
+            >
+
+            <div class="qr-label">
+                MALAYSIA NATIONAL QR
+            </div>
+
+        </div>
+
+        <!-- SELEPAS BAYAR -->
+        <p class="after-payment">
+            Selepas pembayaran, kembali ke Jotform dan upload
+            bukti pembayaran.
+        </p>
+
+        <!-- BUTTON -->
+        <a
+            href="order.html"
+            class="back-button"
+        >
+            KEMBALI KE ORDER
+        </a>
+
+    </div>
+
+</body>
+</html>
